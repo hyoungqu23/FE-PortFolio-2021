@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
   <link rel="shortcut icon" href="favicon.png" />
   <script src="./script.js" defer></script>
 </head>
+
 <body>
   <div class="container">
     <header class="flex">
@@ -26,9 +28,8 @@
       </nav>
     </header>
     <input type="button" id="top" value="Top" onclick="window.scrollTo({'behavior':'smooth', 'top':0 ,})" />
-    
-    <input type="button" id="darkMode" value="Dark" 
-    onclick="
+
+    <input type="button" id="darkMode" value="Dark" onclick="
     if (this.value === 'Dark') { 
       document.querySelector('.container').style.backgroundImage = 'linear-gradient(to top, #09203f 0%, #537895 100%)';
       document.querySelector('.container').style.color = 'white';
@@ -38,8 +39,7 @@
       document.querySelector('.container').style.color = 'black';
       this.value='Dark';
     }
-    "
-    >
+    ">
     <main role="main">
       <article id="home" class="flex">
         <div class="profile">
@@ -63,7 +63,7 @@
         <h2>👍 저는...</h2>
         <ul class="cards">
           <li class="card">
-            <p>💻 개발을 취미이자 특기입니다.</p>
+            <p>💻 개발이 취미이자 특기입니다.</p>
           </li>
           <li class="card">
             <p>⚽ 축구와 야구를 좋아합니다.</p>
@@ -90,53 +90,62 @@
         </div>
         <div class="tab-container">
           <ul class="tab-list flex">
-              <li class="active"><a href="#tab1">HTML5</a></li>
-              <li ><a href="#tab2">CSS3</a></li>
-              <li ><a href="#tab3">JavaScript</a></li>
-              <li ><a href="#tab4">React</a></li>
-              <li ><a href="#tab5">Node.js</a></li>
-              <li ><a href="#tab6">Git</a></li>
+            <li class="active"><a href="#tab1">HTML5</a></li>
+            <li><a href="#tab2">CSS3</a></li>
+            <li><a href="#tab3">JavaScript</a></li>
+            <li><a href="#tab4">React</a></li>
+            <li><a href="#tab5">Node.js</a></li>
+            <li><a href="#tab6">Git</a></li>
           </ul>
 
           <div id="tab1" class="tab active">
-              <h3>HTML5</h3>
-              <p>
-                The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.(<a href="https://en.wikipedia.org/wiki/HTML">참고</a>)
-              </p>
+            <h3>HTML5</h3>
+            <p>
+              The HyperText Markup Language or HTML is the standard markup language for documents designed to be
+              displayed in a web browser.(<a href="https://en.wikipedia.org/wiki/HTML">참고</a>)
+            </p>
           </div>
           <div id="tab2" class="tab">
-              <h3>CSS3</h3>
-              <p>
-                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.(<a href="https://en.wikipedia.org/wiki/CSS">참고</a>)
-              </p>
+            <h3>CSS3</h3>
+            <p>
+              Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document
+              written in a markup language such as HTML.(<a href="https://en.wikipedia.org/wiki/CSS">참고</a>)
+            </p>
           </div>
           <div id="tab3" class="tab">
-              <h3>JavaScript</h3>
-              <p>
-                JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.(<a href="https://en.wikipedia.org/wiki/JavaScript">참고</a>)
-              </p>
+            <h3>JavaScript</h3>
+            <p>
+              JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the
+              World Wide Web, alongside HTML and CSS.(<a href="https://en.wikipedia.org/wiki/JavaScript">참고</a>)
+            </p>
           </div>
           <div id="tab4" class="tab">
-              <h3>React</h3>
-              <p>
-                React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on UI components.(<a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)">참고</a>)
-              </p>
+            <h3>React</h3>
+            <p>
+              React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for
+              building user interfaces based on UI components.(<a
+                href="https://en.wikipedia.org/wiki/React_(JavaScript_library)">참고</a>)
+            </p>
           </div>
           <div id="tab5" class="tab">
-              <h3>Node.js</h3>
-              <p>
-                Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.(<a href="https://en.wikipedia.org/wiki/Node.js">참고</a>)
-              </p>
+            <h3>Node.js</h3>
+            <p>
+              Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
+              engine and executes JavaScript code outside a web browser.(<a
+                href="https://en.wikipedia.org/wiki/Node.js">참고</a>)
+            </p>
           </div>
           <div id="tab6" class="tab">
-              <h3>Git</h3>
-              <p>
-                Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.(<a href="https://en.wikipedia.org/wiki/Git">참고</a>)
-              </p>
-              
+            <h3>Git</h3>
+            <p>
+              Git is software for tracking changes in any set of files, usually used for coordinating work among
+              programmers collaboratively developing source code during software development.(<a
+                href="https://en.wikipedia.org/wiki/Git">참고</a>)
+            </p>
+
           </div>
 
-      </div>
+        </div>
       </article>
       <article id="words">
         <button id="open">OPEN</button>
@@ -169,4 +178,5 @@
     </footer>
   </div>
 </body>
+
 </html>
