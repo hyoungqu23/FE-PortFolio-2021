@@ -12,6 +12,22 @@ for (let i = 0; i < $aTags.length; i++) {
   }
 }
 
+// Home Text-Typing animation 구현
+const typedContent = "프론트엔드 개발자 이형민입니다."
+const typedText = document.querySelector(".text-typing");
+
+let index = 0;
+ 
+function textTyping() {
+  typedText.textContent += typedContent[index++]
+  if(index > typedContent.length){
+    typedText.textContent = ""
+    index = 0;
+  }
+}
+
+setInterval(textTyping, 100);
+
 // Tab 구현
 let $links = document.querySelectorAll(".tab-list li a");
 let $items = document.querySelectorAll(".tab-list li");
@@ -33,7 +49,7 @@ for (let i = 0; i < $items.length; i++) {
 }
 
 // 텍스트 Swipe 구현
-const text_content = ["프론트엔드", "성실히 기록하는", "코드를 설명할 수 있는", "문제 해결 능력이 있는", "즐겁게 개발하는", "조금 더 살기 좋은 세상을 만드는"];
+const text_content = ["프론트엔드", "성실히 기록하는", "코드를 설명할 수 있는", "문제 해결 능력이 있는", "즐겁게 개발하는", `조금 더 나은 세상을 만드는`];
 const $text = document.querySelector('p.text');
 let idx = 0;
 
