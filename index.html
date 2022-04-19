@@ -31,12 +31,14 @@
 
     <input type="button" id="darkMode" value="Dark" onclick="
     if (this.value === 'Dark') { 
-      document.querySelector('.container').style.backgroundImage = 'linear-gradient(to top, #09203f 0%, #537895 100%)';
-      document.querySelector('.container').style.color = 'white';
+      document.querySelector('.container').style.backgroundColor = '#0C3934';
+      document.querySelector('.container').style.color = '#FFFBE7';
+      document.querySelector('main section#dream p.text').style.color = '#FFFBE7';
       this.value='Light';
     } else {
-      document.querySelector('.container').style.backgroundImage = 'linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)';
-      document.querySelector('.container').style.color = 'black';
+      document.querySelector('.container').style.backgroundColor = '#FFFBE7';
+      document.querySelector('.container').style.color = '#0C3934';
+      document.querySelector('main section#dream p.text').style.color = '#0C3934';
       this.value='Dark';
     }
     ">
@@ -47,7 +49,7 @@
         </div>
         <div class="intro">
           <h2>
-            🙋‍♂️안녕하세요!
+            안녕하세요!
           </h2>
           <p class="text-typing"></p>
         </div>
@@ -60,7 +62,7 @@
         </div>
       </section>
       <section id="about" class="flex">
-        <h2>👍 저는...</h2>
+        <h2>👍 About Me</h2>
         <ul class="cards">
           <li class="card">
             <p>💻 개발이 취미이자 특기입니다.</p>
@@ -85,7 +87,7 @@
 
       <article id="skill">
         <div class="skill-intro">
-          <h2>👍 관심 기술</h2>
+          <h2>👍 Skill</h2>
           <p>프론트엔드에 관심이 많으며, JavaScript와 React를 활용한 웹 개발을 하고 싶습니다.</p>
         </div>
         <div class="tab-container">
